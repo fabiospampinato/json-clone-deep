@@ -1,7 +1,7 @@
 
-/* JSON DEEP CLONE */
+/* JSON CLONE DEEP */
 
-function deepClone<T> ( x: T ): T {
+function cloneDeep<T> ( x: T ): T {
 
   return JSON.parse ( JSON.stringify ( x ) );
 
@@ -9,4 +9,4 @@ function deepClone<T> ( x: T ): T {
 
 /* EXPORT */
 
-export default deepClone;
+export default cloneDeep;

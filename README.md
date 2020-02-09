@@ -1,4 +1,4 @@
-# JSON Deep Clone
+# JSON Clone Deep
 
 Deep cloning based on JSON.
 
@@ -7,15 +7,15 @@ It can only deep-clone JSON-serializable values.
 ## Install
 
 ```sh
-npm install --save json-deep-clone
+npm install --save json-clone-deep
 ```
 
 ## Usage
 
 ```ts
-import deepClone from 'json-deep-clone';
+import cloneDeep from 'json-clone-deep';
 
-deepClone ({ foo: 123, bar: [1, 2, '3'] }); // => { foo: 123, bar: [1, 2, '3'] }
+cloneDeep ({ foo: 123, bar: [1, 2, '3'] }); // => { foo: 123, bar: [1, 2, '3'] }
 ```
 
 ## License

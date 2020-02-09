@@ -1,7 +1,7 @@
 
 /* IMPORT */
 
-const {default: deepClone} = require ( '../dist' ),
+const {default: cloneDeep} = require ( '../dist' ),
       benchmark = require ( 'benchloop' );
 
 /* BENCHMARK */
@@ -12,8 +12,8 @@ benchmark.defaultOptions = Object.assign ( benchmark.defaultOptions, {
 });
 
 benchmark ({
-  name: 'json-deep-clone',
+  name: 'json-clone-deep',
   fn: () => {
-    deepClone ({ foo: 123, bar: [1, 2, '3'] });
+    cloneDeep ({ foo: 123, bar: [1, 2, '3'] });
   }
 });

@@ -2,15 +2,15 @@
 /* IMPORT */
 
 import {describe} from 'ava-spec';
-import {default as deepClone} from '../dist';
+import {default as cloneDeep} from '../dist';
 
-/* JSON DEEP CLONE */
+/* JSON CLONE DEEP */
 
-describe ( 'JSON Deep Clone', it => {
+describe ( 'JSON Clone Deep', it => {
 
   it ( 'works', t => {
 
-    t.deepEqual ( deepClone ({ foo: 123, bar: [1, 2, '3'] }), { foo: 123, bar: [1, 2, '3'] } );
+    t.deepEqual ( cloneDeep ({ foo: 123, bar: [1, 2, '3'] }), { foo: 123, bar: [1, 2, '3'] } );
 
   });
 
