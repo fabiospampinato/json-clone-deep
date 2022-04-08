@@ -1,11 +1,11 @@
 
-/* JSON CLONE DEEP */
+/* MAIN */
 
-function cloneDeep<T> ( x: T ): T {
+const cloneDeep = <T> ( value: T ): T => {
 
-  return JSON.parse ( JSON.stringify ( x ) );
+  return JSON.parse ( JSON.stringify ( value ) );
 
-}
+};
 
 /* EXPORT */
 

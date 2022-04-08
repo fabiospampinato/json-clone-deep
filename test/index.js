@@ -1,10 +1,10 @@
 
 /* IMPORT */
 
-import {describe} from 'ava-spec';
-import {default as cloneDeep} from '../dist';
+import {describe} from 'fava';
+import cloneDeep from '../dist/index.js';
 
-/* JSON CLONE DEEP */
+/* MAIN */
 
 describe ( 'JSON Clone Deep', it => {
 
